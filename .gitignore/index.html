@@ -1,0 +1,25 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCum_9V4uwOC2mP5Hh4YM6_RYUO2a7cRTY">
+        </script>
+        <script type="text/javascript" src="map1.js"></script>
+        <link rel="stylesheet" href="main.css">
+        <title>ジオコーディング</title>
+    </head>
+    <body onload="initialize()">
+        <div id="wrapper"> 
+        <table>
+            <tr><th>項目</th><th>情報</th></tr>
+            <tr><td>緯度</td><td id="id_ido"></td></tr>
+            <tr><td>緯度</td><td id="id_keido"></td></tr>
+        </table>
+        <input id="address" type="text" value="東京都庁">
+        <input type="button" value="ジオコーディングを実行" onclick="codeAddress()">
+        <div id="map_canvas" style="width:500px; height: 300px"></div>
+        <!--/ #wrapper--></div>  
+
+    </body>
+</html>
